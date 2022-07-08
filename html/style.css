@@ -23,10 +23,10 @@ div {
 }
 .login{
     font-size: 11px;
-    float:right;
     
-    display: flex;
-    box-sizing: border-box;
+    margin-left: auto;
+    
+    
 }
 .login__list{
     margin-right: 20px;
