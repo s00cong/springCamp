@@ -10,7 +10,6 @@ div {
 .top{
     background-color: yellow;
     list-style-type: none; 
-    
 }
 
 .preference{
@@ -38,6 +37,13 @@ li{
 #logo{
     float: left;
 }
+#reservebox{
+    background-color: rgb(180, 127, 127);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
 .reserve{
     overflow: hidden;
     font-size: 16px;
@@ -62,4 +68,12 @@ li{
 }
 #reserve__real{
     block-size:auto;
+}
+#navlogo{
+    margin: 30px;
+    width: 5%;
+}
+.mainnav>ul{
+    
+    margin:auto;
 }
