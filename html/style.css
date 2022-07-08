@@ -1,3 +1,65 @@
+a { 
+    text-decoration:none;
+    color: inherit; 
+}
+
+div {
+
+    border: 1px solid red;
+  } 
 .top{
-    color: gray;
+    background-color: yellow;
+    list-style-type: none; 
+    
+}
+
+.preference{
+    font-size: 11px;
+    
+    display: flex;
+    box-sizing: border-box;
+}
+.preference__list{
+    margin-left: 20px;
+}
+.login{
+    font-size: 11px;
+    float:right;
+    
+    display: flex;
+    box-sizing: border-box;
+}
+.login__list{
+    margin-right: 20px;
+}
+li{
+    display: inline;
+}
+#logo{
+    float: left;
+}
+.reserve{
+    overflow: hidden;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    padding: 20px 20px 30px 20px;
+    position: relative;
+    display: block;
+    transform: none;
+    transition: all 0s ease 0s;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+    border-bottom-right-radius: 8px;
+}
+#tickettype>ul>li{
+    margin: 20px;
+    font-size: 14px;
+}
+#tickettype{
+   
+    display: block;
+}
+#reserve__real{
+    block-size:auto;
 }

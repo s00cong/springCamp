@@ -5,49 +5,108 @@
 <head>
     <meta charset="UTF-8">
     <title>제주항공</title>
-    <link rel="stylesheet" href="/html/style.css" type="text/css">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head> <!-- 브라우저의 정보를 입력 -->
 
 <body>
-    
-    <div class="top">
-        <div id="preference">
+    <header>
+        <div class="top">
+            <diu class="top__inner">
+                <div class="preference">
+                    <ul>
+                        <li class="preference__list">
+                            <a href="https://www.jejuair.net/ko/corpService/infomation/main.do">기업 우대</a>
+                        </li>
+                        <li class="preference__list">
+                            <a href="#">여행사 우대</a> <!-- dropdown -->
+                        </li>
+                        <li class="preference__list">
+                            <a href="https://cargo.jejuair.net/cargo/main.do">Cargo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="login">
+                    <ul>
+                        <li class="login__list">
+                            <a href="#">로그인</a>
+                        </li>
+                        <li class="login__list">
+                            <a href="#">회원가입</a>
+                        </li>
+                        <li class="login__list">
+                            <a href="#">리프레시 포인트</a>
+                        </li>
+                        <li class="login__list">
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li class="login__list">
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li class="login__list">
+                            <a href="#">대한민국</a> <!-- dropdown -->
+                        </li>
+                    </ul>
+                </div>
+            </diu>
+        </div>
+    </header>
+
+    <nav>
+        <div class="mainnav">
+            <img id="navlogo" src="img/logo.png" alt="jejulogo">
+
+            <ul class="nav">
+                
+                <li class="nav-item">
+                    <a  href="https://www.jejuair.net/ko/ibe/booking/Availability.do">항공권 예매</a>
+                </li>
+                <li class="nav-item">
+                    <a  href="https://www.jejuair.net/ko/member/mypage/main.do">마이페이지</a>
+                </li>
+                <li class="nav-item">
+                    <a  href="https://www.jejuair.net/ko/additionalService/service/main.do">부가서비스 안내</a>
+                </li>
+                <li class="nav-item">
+                    <a  href="https://wcc.jejuair.net/ko/ibe/checkin/viewCheckin.do">모바일 탑승권</a>
+                </li>
+                <li class="nav-item">
+                    <a  href="https://www.jejuair.net/ko/event/event.do">이벤트</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="reserve" id="reserve">
+        <div id="tickettype">
             <ul>
                 <li>
-                    <a href="https://www.jejuair.net/ko/corpService/infomation/main.do">기업 우대</a>
+                    왕복
                 </li>
                 <li>
-                    <a href="#">여행사 우대</a> <!-- dropdown -->
-                </li>
-                <li>
-                    <a href="https://cargo.jejuair.net/cargo/main.do">Cargo</a>
+                    편도
                 </li>
             </ul>
         </div>
-
-        <div id="login">
-            <ul>
-                <li>
-                    <a href="#">로그인</a>
-                </li>
-                <li>
-                    <a href="#">회원가입</a>
-                </li>
-                <li>
-                    <a href="#">리프레시 포인트</a>
-                </li>
-                <li>
-                    <a href="#">고객센터</a>
-                </li>
-                <li>
-                    <a href="#">공지사항</a>
-                </li>
-                <li>
-                    <a href="#">대한민국</a> <!-- dropdown -->
-                </li>
-            </ul>
+        <div class="reserve__real">
+            <p>ticketing</p>
         </div>
     </div>
+    <div class="movingimg">
+        <ul class="imgs">
+            <li>
+                <a href="https://www.jejuair.net/ko/event/eventDetail.do?eventNo=0000000361">
+                    <img src="img/summer_pool.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    
+
+
 
     
 
