@@ -4,6 +4,7 @@ a {
 }
 
 div {
+    
     border: 1px solid red;
 } 
 .top{
@@ -44,6 +45,8 @@ li{
     transform: translate(-50%,-50%);
 }
 .reserve{
+    margin-left: 10%;
+    margin-right: 10%;
     overflow: hidden;
     font-size: 16px;
     letter-spacing: -0.2px;
@@ -119,26 +122,25 @@ li{
     justify-content: center;
     align-items: center;
 }
-.travel1{
-    background-color: blueviolet;
-    
-}
-.travel2{
-    background-color: rgb(42, 105, 121);
-    
-}
-.travel3{
-    background-color: rgb(74, 219, 61);
-    
-}
-.travel4{
-    background-color: rgb(226, 147, 43);
-    
-}
+
 .vip{
+   
     background-color: #FFD7B8;
     height: 30%;
 }
 .vip_text{
+    font-size: 20pt;
     display: flex;
+}
+.Benefit{
+    margin: 10%;
+    margin-top: 1%;
+}
+.recommend{
+    margin: 10%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.movingimg{
+    margin-top: -5%;
 }
