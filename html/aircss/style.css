@@ -1,15 +1,14 @@
 a { 
     text-decoration:none;
-    color: inherit; 
 }
 
 div {
-    
-    border: 1px solid red;
+    border: 1px solid rgb(37, 223, 13);
 } 
 .top{
     background-color: yellow;
     list-style-type: none; 
+    margin: 10%;
 }
 
 .preference{
@@ -23,10 +22,7 @@ div {
 }
 .login{
     font-size: 11px;
-    
     margin-left: auto;
-    
-    
 }
 .login__list{
     margin-right: 20px;
@@ -98,7 +94,7 @@ li{
 }
 
 .sel1-1{
-    background-color: red;
+    background-color: green;
     width: 30%;
     
 }
@@ -143,4 +139,7 @@ li{
 }
 .movingimg{
     margin-top: -5%;
+}
+footer{
+    
 }
