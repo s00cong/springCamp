@@ -131,13 +131,7 @@ li{
     width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */
     transition: 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
 }
-.slides li:first-child {
-    margin-left: 100px;
-  } /* 슬라이드들 옆으로 정렬 */
-  .slides li:not(:last-child) {
-    float: left;
-    margin-right: 100px;
-  }
+
 
   .controller span {
     position: absolute;
