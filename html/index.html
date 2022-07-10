@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        여행가고파항공121315
+        여행가고파항공
     </title>
     <link rel="icon" type="image/png" href="https://static.jejuair.net/hpgg/resources/images/icon/favicon.ico">
     <link rel="stylesheet" href="aircss/style.css?after" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     
     
 </head> <!-- 브라우저의 정보를 입력 -->
@@ -94,15 +96,24 @@
             <div id="tickettype">
                 <ul>
                     <li>
-                        왕복
+                       <a href="#"> 왕복</a>
                     </li>
                     <li>
-                        편도
+                       <a href="#"> 편도</a>
                     </li>
+                    
+                        
+                        
+                    
                 </ul>
+                
+                    
+                
             </div>
+            
             <div class="reserve__real" style="display: flex; margin: auto;text-align: center;">
                 <div class="sel1-1">
+                    
                     <h3>출발지</h3>
                 </div>
                 <div class="sel1-2">
@@ -115,6 +126,9 @@
                     <h3>달력</h3>
                 </div>
             </div>
+            <div class="sub" style="display: flex;">
+            <button class="submitsche">submit</button>
+        </div>
         </div>
     </div>
 
@@ -123,31 +137,34 @@
         <ul class="slides">
             <li>
                 
-                <img src="img/banner/summer_pool.jpg">
+                <img class="slide1" src="img/banner/summer_pool.jpg">
             </li>
             <li>
                
-                <img src="img/banner/travel.jpg">
+                <img class="slide1" src="img/banner/travel.jpg" alt="travel">
             </li>
             <li>
                 
-                <img src="img/banner/kakaopay.jpg">
+                <img class="slide1" src="img/banner/kakaopay.jpg" alt="kakaopay">
             </li>
             <li>
                 
-                <img src="img/flight.png">
+                <img class="slide1" src="img/banner/flight.png" alt="flight">
             </li>
             <li>
                 
-                <img src="img/banner/money.jpg">
+                <img class="slide1" src="img/banner/money.jpg" alt="money">
             </li>
 
         </ul>
+
+
+        
         <p class="controller">
             <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> 
             <span class="prev">&lang;</span> 
             <span class="next">&rang;</span>
-          </p>
+        </p>
     </div>
 
 
@@ -178,12 +195,15 @@
         </div>
 
     </div>
+    <a href="https://www.jejuair.net/ko/memberBenefit/refreshPoint/main.do">
     <div class="Benefit">
+        
         <div class="paragraph">
             <h2>회원혜택</h2>
         </div>
 
         <div class="vip" style="display:flex; ">
+            
             <div style="margin-left: 20%; display: flex;">
                 <img src="img/point.png">
                 <div class="vip_text">
@@ -192,20 +212,15 @@
                     </p>
                 </div>
             </div>
+           
         </div>
-
+    </a>
     </div>
 
-
-    <!-- <div id='foot'>
-        <div>
-            content
-        </div>
-    </div>
-    
-    <footer></footer> -->
 
 
      
     <script type="text/javascript" src="project.js"></script> 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
