@@ -41,14 +41,17 @@ li{
 #logo{
     float: left;
     
+    
 }
 #reservebox{
+    
     position: absolute;
     left: 50%;
     right: 50%;
     transform: translate(-50%,-50%);
 }
 .reserve{
+    
     margin-left: 12%;
     margin-right: 10%;
     overflow: hidden;
@@ -56,7 +59,6 @@ li{
     letter-spacing: -0.2px;
     line-height: 24px;
     padding: 20px 20px 30px 20px;
-    
     background-color: white;
     position: relative;
     display: block;
@@ -64,22 +66,25 @@ li{
     transition: all 0s ease 0s;
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
 }
 #tickettype>ul>li{
-    
     margin-right: 20px;
     font-size: 14px;
 }
 #tickettype>ul{
     text-align: left;
     padding-left: 15px;
+    
     /* margin-right: 20px;
     font-size: 14px; */
 }
 #tickettype{
     font-size: 14px;
-    padding-left: 0%;
+    padding-left: 10%;
     display: block;
 }
 
@@ -121,18 +126,19 @@ li{
     align-items: center;
     align-content: center;
     margin-top: -3%;
-    padding-left: 15%;
-    padding-right: 15%;
-
+    padding-left: 20%;
+    padding-right: 20%;
+    
     
 }
 
 .slides{
+    
     justify-content: center;
     align-items: center;
     align-content: center;
     position: relative;
-    width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */
+   /* width: 2500px;  슬라이드할 사진과 마진 총 넓이 */
     transition: 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
 }
 
@@ -169,22 +175,38 @@ li{
 
 
 .sel1-1{
-    width: 30%;
-    
+    border-bottom: gray;
+    width: 25%;
+    text-align: left;
+    border-style:groove;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 .sel1-2{
-    background-color: orange;
     width: 10%;
-   
-}
-.sel1-3{
-    background-color: green;
-    width: 30%;
+    border-bottom: gray;
     
 }
+.sel1-3{
+    text-align: right;
+    width: 25%;
+    border-bottom: gray;
+    border-style:groove;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
 .sel1-4{
-    background-color: blue;
+    margin-left: 5%;
+    text-align: right;
     width: 30%;
+    border-bottom: gray;
+    border-style:groove;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
 }
 .travel{
     max-width: 100%;
@@ -199,7 +221,7 @@ li{
     justify-content: center;
 }
 .submitsche{
-    
+    margin-top: 20px;
     padding-bottom: 0;
     background-color: #ff5f2e;
     color: #e1eef6;
@@ -266,5 +288,14 @@ footer{
     z-index: 1;
 }
 .reserve{
+    align-content: center;
     z-index: 2;
+    
+    margin-left: 22%;
+    margin-right: 20%;
+}
+.reserve__real{
+    padding-left: 10%;
+    padding-right: 10%;
+    
 }
