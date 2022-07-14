@@ -1,0 +1,154 @@
+<!-- 
+1	MSR_DATE	날짜
+2	MSR_TIME	시간
+3	SITE_ID	측정소명
+4	W_TEMP	수온
+6	W_PH	pH
+8	W_DO	용존산소
+14	W_TOC	총유기탄소
+
+
+) -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <style>
+        h1{
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+        .question-box{
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+        table{
+            width: 80%;
+            height: auto;
+            margin: auto;
+            
+            border: 1px solid;
+            border-color: rgba(30, 150, 187, 0.603);
+            border-collapse: collapse;
+        }
+
+        td,
+        th{
+            padding: 10px;
+            border: 1px solid;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    
+
+    <h1>jquery와 Ajax를 활용한 서울시 한강 및 주요지천 수질 측정 서비스</h1>
+    <hr />
+    
+    
+    <div class="question-box" >
+        <h2>서울 한강 수질 OpenAPI 사용하기</h2>
+        <p>
+            서울 한강 수질을 보여주세요.
+        </p>
+        <p>
+            업데이트 버트을 누를 때마다 지웠다 새로 씌여져야 합니다.
+        
+        <button onclick="q1()">업데이트</button>
+        </p>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <td>날짜</td>
+                    <td>시간</td>
+                    <td>측정소명</td>
+                    <td>수온</td>
+                    <td>ph</td>
+                    <td>용존산소</td>
+                    <td> 총유기탄소</td>
+                </tr>
+            </thead>
+            <tbody id="names-q1">
+    
+    
+    
+            </tbody>
+        </table>
+    
+    
+    </div>
+    
+    
+    <script>
+        function q1() {
+            
+            var urlreal = "http://openapi.seoul.go.kr:8088/7174624571746e7139374b53695a6d/json/WPOSInformationTime/1/5/" + 20220714;
+            
+            $.ajax({
+                type: "GET",
+                url: urlreal,
+                data: {},
+                success: function(response){
+                    alert("조회 완료")
+                    $("#names-q1").empty()
+                    let water_list = response["WPOSInformationTime"]["row"]
+                    for (let i = 0; i<water_list.length; i++){
+                        let date = water_list[i]["MSR_DATE"]
+                        let time = water_list[i]["MSR_TIME"]
+                        let name = water_list[i]["SITE_ID"]
+                        let temp = water_list[i]["W_TEMP"]
+                        let ph = water_list[i]["W_PH"]
+                        let DO = water_list[i]["W_DO"]
+                        let toc = water_list[i]["W_TOC"]
+                    
+                        let tr_bike = ""
+                        if(water_list.length < 3){
+                            tr_bike = `<tr class="tr_color">
+                                            <td>${date}</td>
+                                            <td>${time}</td>
+                                            <td>${name}</td>
+                                            <td>${temp}</td>
+                                            <td>${ph}</td>
+                                            <td>${DO}</td>
+                                            <td>${toc}</td>
+                                        </tr>`
+                        }
+                        else{
+                            tr_bike = `<tr>
+                                            <td>${date}</td>
+                                            <td>${time}</td>
+                                            <td>${name}</td>
+                                            <td>${temp}</td>
+                                            <td>${ph}</td>
+                                            <td>${DO}</td>
+                                            <td>${toc}</td>
+                                        </tr>`
+                        }
+                        
+                        
+                        $("#names-q1").append(tr_bike)
+                    }
+                }
+            })
+        }
+    </script>
+
+
+</body>
