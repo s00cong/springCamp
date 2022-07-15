@@ -25,6 +25,12 @@
 
     
     <style>
+        *{
+            border-color: blueviolet;
+        }
+        #search-box{
+            height: 40px;
+        }
         h1{
             text-align: center;
             align-items: center;
@@ -65,12 +71,18 @@
     <div class="question-box" >
         <h2>서울 한강 수질 OpenAPI 사용하기</h2>
         <p>
-            서울 한강 수질을 보여주세요.
+            <br>
+            서울 한강 주변 주요 강의 수질을 보여줍니다. (최근 2주간의 data를 조회할 수 있습니다.)
         </p>
         <p>
-            업데이트 버트을 누를 때마다 지웠다 새로 씌여져야 합니다.
-        
-        <button onclick="q1()">업데이트</button>
+            아무것도 입력하지 않으면 가장 최근의 data가 보여집니다.
+        </p>
+        <p>
+            <input style="width: 215px;" id="search-box" type="text" placeholder="  YYYYMMDD  ">
+
+            <button type="button" onclick="q1()" class="btn btn-success" style="width: 150px; background-color: rgb(28, 70, 160);" >업데이트</button>
+
+            
         </p>
         <br>
         <table>
@@ -98,8 +110,9 @@
     
     <script>
         function q1() {
-            
-            var urlreal = "http://openapi.seoul.go.kr:8088/7174624571746e7139374b53695a6d/json/WPOSInformationTime/1/5/" + 20220714;
+            var date = document.getElementById("search-box").value;
+            alert("입력된 날짜 : " + date);
+            var urlreal = "http://openapi.seoul.go.kr:8088/7174624571746e7139374b53695a6d/json/WPOSInformationTime/1/5/"+ date ;
             
             $.ajax({
                 type: "GET",
