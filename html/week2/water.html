@@ -24,7 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     
-    
+
     <style>
         *{
             border-color: blueviolet;
@@ -112,7 +112,12 @@
     <script>
         function q1() {
             var date = document.getElementById("search-box").value;
-            alert("입력된 날짜 : " + date);
+            if(date==""){
+                alert("가장 최근 조회");
+            }
+            else{
+                alert("입력된 날짜 : " + date);
+            }
             var urlreal = "http://openapi.seoul.go.kr:8088/7174624571746e7139374b53695a6d/json/WPOSInformationTime/1/5/"+ date ;
             
             $.ajax({
