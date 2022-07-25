@@ -7,19 +7,19 @@
 <h1>회원가입 리스트</h1>  
 <table border="2" width="70%" cellpadding="2">  
 <tr><th>Num</th><th>En)Name</th><th>userID</th><th>PWD</th><th>P.H</th><th>email</th><th>Gender</th><th>Birth</th><th>Age</th><th>Edit</th><th>Delete</th></tr>  
-   <c:forEach var="user" items="${list}">   
+   <c:forEach var="emp" items="${list}">   
    <tr>  
-   <td>${user.id}</td> 
-   <td>${user.enname}</td>
-   <td>${user.userid}</td>
-   <td>${user.password}</td>
-   <td>${user.phonenum}</td>  
-   <td>${user.email}</td>  
-   <td>${user.gender}</td>
-   <td>${user.birth}</td>
-   <td>${user.age}</td>  
-   <td><a href="editemp/${user.id}">Edit</a></td>  
-   <td><a href="deleteemp/${user.id}">Delete</a></td>  
+   <td>${emp.id}</td> 
+   <td>${emp.enname}</td>
+   <td>${emp.userid}</td>
+   <td>${emp.password}</td>
+   <td>${emp.phonenum}</td>  
+   <td>${emp.email}</td>  
+   <td>${emp.gender}</td>
+   <td>${emp.birth}</td>
+   <td>${emp.age}</td>  
+   <td><a href="editemp/${emp.id}">Edit</a></td>  
+   <td><a href="deleteemp/${emp.id}">Delete</a></td>  
    </tr>  
    </c:forEach>  
    </table>  

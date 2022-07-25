@@ -5,8 +5,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
   
         <h1>Edit Employee</h1>  
-       <form:form method="POST" action="../editsave">    
-        <table >    
+       <form:form method="post" action="/editsave">    
+        <table > 
+        <tr>    
+          <td> </td>   
+          <td><form:input type="hidden" path="id"  /></td>  
+         </tr>   
          <tr>    
           <td>한글 이름 : </td>   
           <td><form:input path="name"  /></td>  

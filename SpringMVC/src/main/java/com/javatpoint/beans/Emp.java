@@ -1,8 +1,17 @@
 package com.javatpoint.beans;
 
 public class Emp {
+	
+	
 	private int age, id;
 	private String userid,name,enname,password,phonenum, email,gender, birth;
+	
+	@Override
+	public String toString() {
+		return "Emp [age=" + age + ", id=" + id + ", userid=" + userid + ", name=" + name + ", enname=" + enname
+				+ ", password=" + password + ", phonenum=" + phonenum + ", email=" + email + ", gender=" + gender
+				+ ", birth=" + birth + "]";
+	}
 	
 	public String getUserid() {
 		return userid;

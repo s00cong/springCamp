@@ -25,6 +25,7 @@ public class EmpDao {
 	    String sql="update UserInfo set name='"+p.getName()+"', enname='"+p.getEnname()+"', userid='"+p.getUserid()+"',password='"+p.getPassword()+"', phonenum='"+p.getPhonenum()+"', birth='"+p.getBirth()+"', gender='"+p.getGender()+"', email='"+p.getEmail()+"', age='"+p.getAge()+"' where id="+p.getId()+"";  
 	    return template.update(sql);  
 	}  
+	
 	public int delete(int id){  
 	    String sql="delete from UserInfo where id="+id+"";  
 	    return template.update(sql);  

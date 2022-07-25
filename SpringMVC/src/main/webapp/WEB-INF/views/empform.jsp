@@ -7,7 +7,8 @@
   
         <h1>회원가입</h1>  
        <form:form method="post" action="save">    
-        <table >    
+        <table > 
+            
          <tr>    
           <td>한글 이름 : </td>   
           <td><form:input path="name"  /></td>  
