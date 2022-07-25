@@ -18,7 +18,7 @@ public class EmpDao {
 	    this.template = template;  
 	}  
 	public int save(Emp p){  
-	    String sql="insert into UserInfo(name,enname,userid,password,phonenum,birth,gender,email,age) values('"+p.getName()+"',"+p.getEnname()+"',"+p.getUserid()+",'"+p.getPassword()+"',"+p.getPhonenum()+"',"+p.getBirth()+"',"+p.getGender()+"',"+p.getEmail()+",'"+p.getAge()+"')";  
+	    String sql="insert into UserInfo(name,enname,userid,password,phonenum,birth,gender,email,age) values('"+p.getName()+"','"+p.getEnname()+"','"+p.getUserid()+"','"+p.getPassword()+"','"+p.getPhonenum()+"','"+p.getBirth()+"','"+p.getGender()+"','"+p.getEmail()+"','"+p.getAge()+"')";  
 	    return template.update(sql);  
 	}  
 	public int update(Emp p){  
