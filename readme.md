@@ -1,7 +1,7 @@
 2022년 Spring Camp 
 ==================
 
-**최종 웹 주소:**
+**최종 웹 주소:** (캠프 이후 더 업데이트 할 예정)
 
 
 **https://s00bcongair.herokuapp.com/**
@@ -21,5 +21,22 @@
 version 1.
 <img width="1024" alt="demo" src="https://user-images.githubusercontent.com/90634773/178433300-ed11b92e-15bc-4bdf-9a21-f1cb84ab3b62.png">
 
-version final.
+**version final.**
 
+1. login page 
+
+    관리자 버전 아이디 : admin
+    
+    관리자 버전 비밀번호 : 1234
+    
+<img width="1024" src="https://user-images.githubusercontent.com/90634773/182035934-4f980a03-7653-46d0-9266-6dcbb1d327aa.png">
+
+2. 회원가입 페이지
+<img width = "1024" src="https://user-images.githubusercontent.com/90634773/182036038-80a8c48e-904b-48cb-9a9d-7dcc725f4a0b.png">
+
+3. main page
+<img width="1024" src="https://user-images.githubusercontent.com/90634773/182036137-a84965ce-9e90-40d9-896e-579dc267d52c.png">
+
+4. 회원정보
+
+<img width="1024" src="https://user-images.githubusercontent.com/90634773/182036196-db5569d8-32d5-421a-9540-9e633d630343.png">
