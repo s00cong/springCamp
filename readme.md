@@ -4,7 +4,7 @@
 **최종 웹 주소:** (캠프 이후 더 업데이트 할 예정)
 
 
-**https://s00bcongair.herokuapp.com/**
+**https://s00bcongair.herokuapp.com/login/login**
 
 ~~웹 페이지 주소 : http://s00bcong.dothome.co.kr/~~
 
