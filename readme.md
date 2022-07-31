@@ -18,9 +18,6 @@
 <br>
 <p>Result: </p>
 
-version 1.
-<img width="1024" alt="demo" src="https://user-images.githubusercontent.com/90634773/178433300-ed11b92e-15bc-4bdf-9a21-f1cb84ab3b62.png">
-
 **version final.**
 
 1. login page 
