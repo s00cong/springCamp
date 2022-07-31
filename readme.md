@@ -1,7 +1,12 @@
 2022년 Spring Camp 
 ==================
 
-웹 페이지 주소 : http://s00bcong.dothome.co.kr/
+**최종 웹 주소:**
+
+
+**https://s00bcongair.herokuapp.com/**
+
+~~웹 페이지 주소 : http://s00bcong.dothome.co.kr/~~
 
 목표 : jeju 항공 clone coding하기
     https://www.jejuair.net/ko/main/base/index.do 
@@ -15,4 +20,6 @@
 
 version 1.
 <img width="1024" alt="demo" src="https://user-images.githubusercontent.com/90634773/178433300-ed11b92e-15bc-4bdf-9a21-f1cb84ab3b62.png">
+
+version final.
 
