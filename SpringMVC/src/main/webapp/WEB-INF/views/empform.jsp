@@ -23,7 +23,7 @@
          </tr> 
          <tr>    
           <td>비밀 번호 :</td>    
-          <td><form:input path="password" /></td>  
+          <td><form:input path="password" type="password" /></td>  
          </tr> 
          <tr>    
           <td>전화 번호 :</td>    

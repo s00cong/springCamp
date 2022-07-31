@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Emp">
+	<insert id="save">
+		insert into UserInfo (name,enname,userid,password,phonenum,birth,gender,email,age) values (#{name},#{enname},#{userid},#{password},#{phonenum},#{birth},#{gender},#{email},#{age})
+	</insert>
+	<update id="update">
+		update UserInfo
+		set name=#{name},enname=#{enname},userid=#{userid},password=#{password},phonenum=#{phonenum},birth=#{birth},gender=#{gender},email=#{email},age=#{age}
+		where id = #{id}
+	</update>
+	<delete id="delete">
+		delete from UserInfo where id=#{id}
+	</delete>
+	<select id="getUserByID" resultType="emp">
+		select * from UserInfo where id=#{id}
+	</select>
+	<select id="getUsers" resultType="emp">
+		select * from UserInfo order by id 
+	</select>
+	<select id="getUser" resultType="emp">
+		select userid, name from UserInfo
+		where userid=#{userid} and password=#{password}
+	</select>
+	
+	
+</mapper>
+
+
+

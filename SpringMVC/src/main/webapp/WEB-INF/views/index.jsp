@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="empform">Add Employee</a>  
-<a href="viewemp">View Employees</a>  
+	<%@include file="index3.jsp" %> 
 </body>
 </html>
