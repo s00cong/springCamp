@@ -75,7 +75,7 @@
 				</ul>
 			</div>
     </header>
-
+<br>
     <nav>
         <div class="wrappernav" >
             <div class="mainnav" style="display: flex;">
@@ -103,7 +103,8 @@
             </div>
         </div>
     </nav>
-
+	
+	<br>
     <div class="reserve" id="reserve">
         <div class="resevebox">
             <div id="tickettype">

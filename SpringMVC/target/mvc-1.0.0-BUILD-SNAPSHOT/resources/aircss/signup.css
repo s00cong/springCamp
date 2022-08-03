@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+a { 
+    text-decoration:none;
+    color: inherit; 
+}
+*{
+    font-family: 'SpoqaHanSansNeo', 'roboto', sans-serif;
+}
+.top{
+    margin: 10%;
+   
+    list-style-type: none; 
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.preference{
+    font-size: 11px;
+    text-align: left;
+    
+    box-sizing: border-box;
+}
+.preferul{
+    text-align: left;
+    margin-right: 20px;
+}
+.preference__list{
+    margin-right: 20px;
+    text-align: left;
+}
+.login{
+    font-size: 11px;
+    margin-left: auto;
+}
+.login__list{
+    margin-right: 20px;
+}
+li{
+    display: inline;
+}
+#logo{
+    float: left;
+}
+#navlogo{
+    vertical-align: top;
+    cursor:auto;
+    height: 20px;
+    max-width: 100px;
+}
+.wrappernav{
+    display:grid;
+    margin: 15px;
+}
+.mainnav{
+    
+    margin-left: 12%;
+    
+}
+.mainnav>ul{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav{
+    margin: 0;
+    position: relative;
+}
+.nav>li{
+    
+    margin-right: 30px;
+}
+
+tr,td,table,th{
+	
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	position: relative;
+
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+}
+.signup{
+	padding-left:48%;
+	margin-left:auto;
+	margin-right:auto;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+td>input{
+	
+}
