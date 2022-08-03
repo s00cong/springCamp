@@ -22,6 +22,7 @@ public class EmpController {
 	@Autowired    
     EmpDao dao;//will inject dao from XML file  
 	Emp beans;
+	
 	@RequestMapping(value = "/")
 	public String index() {
 		return "index";
